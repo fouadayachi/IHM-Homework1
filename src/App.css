@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+
+body {
+  direction: rtl;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.container {
+  display: grid;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  place-items: center;
+  
+  background: url(./background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.info-form {
+  overflow: auto;
+  width: 80%;
+  max-width: 400px;
+  margin: auto;
+  padding: 2rem;
+  display: grid;
+  gap: 1rem;
+  border-radius: 1rem;
   color: white;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.info-form .header h1 {
+  text-align: center;
+  font-weight: 400;
+  margin-top: -10px;
+}
+.info-form button {
+  background-color: #3399FF;
+  margin-top: 1rem;
+  color: white;
+  cursor: pointer;
+  border: 0;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.info-form input {
+  border-radius: 0.5rem;
+  border: 2px solid #03001d;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.info-form input:hover,.info-form input:focus {
+  border: 2px solid #3399FF;
+}
+.info-form input:focus {
+  box-shadow: 0 0 0 2px #0072E5;
+}
+
+.info-form button , .info-form input {
+  padding: .5rem 1rem;
+  outline: none;
+  transition: 0.3s;
+  font-size: 1rem;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.info-form button:hover {
+  background-color: #0072E5;
+}
+.info-form input.input-error {
+  border: 2px solid #e7097f;
+}
+
+.info-form .form-data {
+  display: grid;
+  gap: 1rem;
+}
+
+.info-form .form-data .form-input {
+  display: grid;
+  gap: .5rem;
+}
+.info-form .form-data .form-input .labels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.error {
+  color: #e7097f;
 }
