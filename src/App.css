@@ -52,6 +52,7 @@ body {
 .info-form input {
   border-radius: 0.5rem;
   border: 2px solid #03001d;
+  width: 100%;
   background-color: rgba(255, 255, 255, 0.8);
 }
 
@@ -97,4 +98,10 @@ body {
 
 .error {
   color: #e7097f;
+}
+
+@media screen and (max-width: 400px) {
+  .info-form {
+    width: 95%;
+  }
 }
