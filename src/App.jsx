@@ -66,7 +66,7 @@ function App() {
         if (Object.keys(err).length > 0) return;
 
         // Set user info if validation passes
-        setUserInfo(`السيد  (ة)  ${formData.firstName} ${formData.lastName}  ${formData.dateOfBirth}  ${formData.placeOfBirth}`);
+        setUserInfo(`السيد  (ة)  ${formData.firstName} ${formData.lastName}  ${formData.dateOfBirth}  ب${formData.placeOfBirth}`);
     };
 
     return (
