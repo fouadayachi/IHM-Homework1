@@ -32,8 +32,8 @@ body {
   border-radius: 1rem;
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(4px);
 }
 .info-form .header h1 {
   text-align: center;
